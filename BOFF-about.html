@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+
+  <style>
+	
+	 body {
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+	
+	
+	
+	/* JUMBOTRON */
+	header.jumbotron {
+		color: white;
+		background-image: url("https://www.v12data.com/wp-content/uploads/2018/11/cinema-header-images.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 40vh;
+	}
+	
+	footer.jumbotron {
+		color: white;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s3.amazonaws.com/bklyner/bklyner/wp-content/uploads/2018/04/BBPark_movie_Etienne-Frossard.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100vh;
+		margin: 3em 0 0 0;
+	}	
+	.jumbo-title {
+		text-align: center;
+		opacity: 0.9;
+		color: white;
+		margin: 1em;
+	}
+	
+	/* NAV */
+	.navbar {
+		overflow: hidden;
+		transition: 0.4s;
+		position: fixed;
+	}
+	
+	.nav-link {
+		text-transform: uppercase;
+	}
+	
+	.bg-dark {
+		opacity: 0.8;
+	}
+	
+	
+	.navbar a.active {
+		background-color: #fff;
+		color: black;
+	}
+	
+	.featurette-divider {
+		margin: 5rem 0;
+	}
+
+
+  </style>
+
+  
+
+</head>
+<body>
+<nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark">
+    <div class="container navbar-header">
+        <a class="navbar-brand" href="Brooklyn Film Festival.html">
+		 <img src="https://annuaire.laposte.fr/images/category/picto/586.png" width="30" height="30" class="d-inline-block align-top">
+		BOFF
+		</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+		
+		
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="nav navbar-nav ml-auto nav-pills" id="myTab" role="tablist navigation">
+                <li class="nav-item">
+                    <a class="nav-link" href="Brooklyn Film Festival.html" role="tab">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="about-tab" href="BOFF-about.html" role="tab">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="showings-tab" href="BOFF-showings.html" role="tab">Showtimes</a>
+                </li>
+       
+
+		
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<header class="jumbotron jumbotron-fluid">
+ <h1 class="display-1 jumbo-title" style="text-transform: uppercase;">About us</h1>
+</header>
+
+<div class="container">
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+          <div class="col-md-8">
+            <h2 class="featurette-heading">Jennifer Viala <span class="text-muted" style="font-size: 0.7em;">Brooklyn Vibes Events Co.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-4">
+            <img class="featurette-image img-fluid mx-auto" alt="Profile Picture" style="img-size: cover;" src="http://mangalparinaymatrimony.com/images/site_images/profile/blank-profile.jpg" data-holder-rendered="true">
+          </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+          <div class="col-md-4">
+            <img class="featurette-image img-fluid mx-auto" alt="Profile Picture" style="img-size: cover;" src="https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-9/374924_10150584424623082_2097547254_n.jpg?_nc_cat=101&_nc_ht=scontent-yyz1-1.xx&oh=153745f9ce7b1798941e2f859dd5c27b&oe=5D44982B" data-holder-rendered="true">
+          </div>
+          <div class="col-md-8">
+            <h2 class="featurette-heading">New York City <span class="text-muted" style="font-size: 0.7em;">Department of Parks & Recreation</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+	<div class="col-md-6">
+		<h2 class="featurette-heading">The Venue <span class="text-muted" style="font-size: 0.7em;">Brooklyn Bridge Park</span></h2>
+	</div>
+	<div class="col-md-6">
+		<img class="featurette-image img-fluid mx-auto" alt="Profiile Picture" style="img-size: cover;" src="https://cdn.vox-cdn.com/thumbor/lnmPQf7nOPMYerLRAkaoNox6Fmk=/0x0:2000x1333/920x613/filters:focal(840x507:1160x827):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/60318235/180709_16_53_21_5DR21022.0.jpg" data-holder-render="true">
+	</div>
+</div>
+
+<hr class="featurette-divider">
+ 
+</div>
+ 
+<footer class="jumbotron jumbotron-fluid">
+ <div class="container">
+  <div class="row">
+   <div class="col-lg-6 offset-lg-3" id="prereg">
+   
+	<div style="margin-top: 25%;">
+	<form>
+    <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Full Name">
+    </div>
+    <div class="col">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail Address">
+    </div>
+  </div>
+</form>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col pt-0" style="text-align: right;">Date(s) of attendance</legend>
+      <div class="col" style="float: left;">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck1" value="option1" checked>
+          <label class="form-check-label" for="gridCheck1">
+            August 5th
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck2" value="option2">
+          <label class="form-check-label" for="gridCheck2">
+            August 6th
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck3" value="option3">
+          <label class="form-check-label" for="gridCheck3">
+            August 7th
+          </label>
+        </div>
+		 <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck4" value="option4">
+          <label class="form-check-label" for="gridCheck4">
+            August 8th
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <div class="col" style="text-align: right;">Newsletter subscription</div>
+    <div class="col">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck5">
+        <label class="form-check-label" for="gridCheck5">
+          Sign me up!
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <button type="submit" class="btn btn-outline-success btn-sm btn-block">Pre-register</button>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+</div>
+
+
+
+<div class="col-md-12 d-flex" style="justify-content: space-around; align-items: flex-end; padding-top: 25%;">
+<a class="btn btn-outline-primary" href="https://www.instagram.com/"><i class="fab fa-instagram" style="font-size: 2em; color: white;"></i></a>
+<a class="btn btn-outline-primary" href="https://www.twitter.com/"><i class="fab fa-twitter" style="font-size: 2em; color: white;"></i></a>
+<a class="btn btn-outline-primary" href="https://www.facebook.com/"><i class="fab fa-facebook-f" style="font-size: 2em; color: white;"></i></a>
+<a class="btn btn-outline-primary" href="http://brooklyn.news12.com/">City of Brooklyn News</a>
+<a class="btn btn-outline-primary" href="https://www.brooklynbridgepark.org/">Brooklyn Bridge Park Website</a>
+
+</div>
+
+</footer>	
+</body>
+
+</html>
