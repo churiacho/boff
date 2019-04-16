@@ -18,8 +18,8 @@
 		background-color: #636b77;
 	}
 	
-	/* JUMBOTRON */
-	header.jumbotron {
+
+	header{
 		color: white;
 		background-image: url("https://www.v12data.com/wp-content/uploads/2018/11/cinema-header-images.jpg");
 		background-position: center;
@@ -29,7 +29,7 @@
 	}
 
 	
-	footer.jumbotron {
+	footer {
 		color: white;
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s3.amazonaws.com/bklyner/bklyner/wp-content/uploads/2018/04/BBPark_movie_Etienne-Frossard.jpg");
 		background-position: center;
@@ -38,12 +38,10 @@
 		height: 100vh;
 		margin: 3em 0 0 0;
 	}	
-	.jumbo-title {
-		text-align: center;
-		opacity: 0.9;
-		color: white;
-		margin: 1em;
-	}
+	.jumbotron {
+    background-color: transparent;
+    height: 40vh;
+  }
 	
 	/* NAV */
 	.navbar {
@@ -106,8 +104,8 @@
     </div>
 </nav>
 
-<header class="jumbotron jumbotron-fluid">
- <h1 class="display-1 jumbo-title" style="text-transform: uppercase;">The Films</h1>
+<header>
+ <h1 class="display-1 jumbotron d-flex" style="justify-content: center; align-items: flex-end; text-transform: uppercase;">The Films</h1>
 </header>
 
 <div class="album py-5">
@@ -210,7 +208,7 @@
   </div>
 </div>
 
-<footer class="jumbotron jumbotron-fluid">
+<footer>
  <div class="container">
   <div class="row">
    <div class="col-lg-6 offset-lg-3" id="prereg">

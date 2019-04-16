@@ -19,9 +19,7 @@
 	}
 	
 	
-	
-	/* JUMBOTRON */
-	header.jumbotron {
+	header {
 		color: white;
 		background-image: url("https://www.v12data.com/wp-content/uploads/2018/11/cinema-header-images.jpg");
 		background-position: center;
@@ -30,7 +28,7 @@
 		height: 40vh;
 	}
 	
-	footer.jumbotron {
+	footer {
 		color: white;
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s3.amazonaws.com/bklyner/bklyner/wp-content/uploads/2018/04/BBPark_movie_Etienne-Frossard.jpg");
 		background-position: center;
@@ -38,7 +36,13 @@
 		background-size: cover;
 		height: 100vh;
 		margin: 3em 0 0 0;
-	}	
+	}
+
+  .jumbotron {
+    background-color: transparent;
+    height: 40vh;
+  }	
+
 	.jumbo-title {
 		text-align: center;
 		opacity: 0.9;
@@ -110,8 +114,8 @@
 </nav>
 
 
-<header class="jumbotron jumbotron-fluid">
- <h1 class="display-1 jumbo-title" style="text-transform: uppercase;">About us</h1>
+<header>
+ <h1 class="jumbotron display-1 d-flex" style="text-transform: uppercase; justify-content: center; align-items: flex-end;">About us</h1>
 </header>
 
 <div class="container">
@@ -156,86 +160,102 @@
  
 </div>
  
-<footer class="jumbotron jumbotron-fluid">
- <div class="container">
-  <div class="row">
-   <div class="col-lg-6 offset-lg-3" id="prereg">
+<footer>
+    <div class="container jumbotron">
+     <div class="row">
+      <div class="col-lg-6 offset-lg-3" id="prereg">
+      
+     <div style="margin-top: 25%;">
+       <form>
+       <div class="row">
+         <input type="text" class="form-control" placeholder="Name">
+       </div>
+       </form>
+       <form>
+       <div class="row">
+         <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail Address">
+       </div>
+       </form>
+     </div>
    
-	<div style="margin-top: 25%;">
-	<form>
-    <div class="form-row">
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Full Name">
-    </div>
-    <div class="col">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail Address">
-    </div>
-  </div>
-</form>
-  <fieldset class="form-group">
-    <div class="row">
-      <legend class="col-form-label col pt-0" style="text-align: right;">Date(s) of attendance</legend>
-      <div class="col" style="float: left;">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1" value="option1" checked>
-          <label class="form-check-label" for="gridCheck1">
-            August 5th
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck2" value="option2">
-          <label class="form-check-label" for="gridCheck2">
-            August 6th
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck3" value="option3">
-          <label class="form-check-label" for="gridCheck3">
-            August 7th
-          </label>
-        </div>
-		 <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck4" value="option4">
-          <label class="form-check-label" for="gridCheck4">
-            August 8th
-          </label>
-        </div>
-      </div>
-    </div>
-  </fieldset>
-  <div class="form-group row">
-    <div class="col" style="text-align: right;">Newsletter subscription</div>
-    <div class="col">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck5">
-        <label class="form-check-label" for="gridCheck5">
-          Sign me up!
-        </label>
-      </div>
-    </div>
-  </div>
-  <div class="form-group row">
-    <div class="col-sm-12">
-      <button type="submit" class="btn btn-outline-success btn-sm btn-block">Pre-register</button>
-    </div>
-  </div>
-</form>
-</div>
-</div>
-</div>
-
-
-
-<div class="col-md-12 d-flex" style="justify-content: space-around; align-items: flex-end; padding-top: 25%;">
-<a class="btn btn-outline-primary" href="https://www.instagram.com/"><i class="fab fa-instagram" style="font-size: 2em; color: white;"></i></a>
-<a class="btn btn-outline-primary" href="https://www.twitter.com/"><i class="fab fa-twitter" style="font-size: 2em; color: white;"></i></a>
-<a class="btn btn-outline-primary" href="https://www.facebook.com/"><i class="fab fa-facebook-f" style="font-size: 2em; color: white;"></i></a>
-<a class="btn btn-outline-primary" href="http://brooklyn.news12.com/">City of Brooklyn News</a>
-<a class="btn btn-outline-primary" href="https://www.brooklynbridgepark.org/">Brooklyn Bridge Park Website</a>
-
-</div>
-
-</footer>	
+     <form>
+       <div class="form-row">
+         <div class="form-group col">
+           <label for="Aug5">August 5th</label>
+           <select class="form-control" id="Aug5">
+             <option>Select Movie</option>
+             <option>Movie 1</option>
+             <option>Movie 2</option>
+             <option>Movie 3</option>
+           </select>
+         </div>
+         <div class="form-group col">
+           <label for="Aug6">August 6th</label>
+           <select class="form-control" id="Aug6">
+               <option>Select Movie</option>
+             <option>Movie 1</option>
+             <option>Movie 2</option>
+             <option>Movie 3</option>
+           </select>
+         </div>
+       </div>
+     </form>
+     <form>
+         <div class="form-row">
+           <div class="form-group col">
+             <label for="Aug7">August 7th</label>
+             <select class="form-control" id="Aug7">
+                 <option>Select Movie</option>
+               <option>Movie 1</option>
+               <option>Movie 2</option>
+               <option>Movie 3</option>
+             </select>
+           </div>
+           <div class="form-group col">
+             <label for="Aug8">August 8th</label>
+             <select class="form-control" id="Aug8">
+               <option>Select Movie</option>
+               <option>Movie 1</option>
+               <option>Movie 2</option>
+               <option>Movie 3</option>
+             </select>
+           </div>
+         </div>
+       </form>
+     <div class="form-group row">
+       <div class="col" style="text-align: right;">Newsletter subscription</div>
+       <div class="col">
+         <div class="form-check">
+           <input class="form-check-input" type="checkbox" id="gridCheck5">
+           <label class="form-check-label" for="gridCheck5">
+             Sign me up!
+           </label>
+         </div>
+       </div>
+     </div>
+     <div class="form-group row">
+       <div class="col-sm-12">
+         <button type="submit" class="btn btn-outline-success btn-sm btn-block">Pre-register</button>
+       </div>
+     </div>
+   
+     </div>
+     </div>
+     <div class="col-md-12 d-flex" style="justify-content: space-around; align-items: flex-end; margin-top: 3em">
+         <a class="btn btn-outline-primary" href="https://www.instagram.com/"><i class="fab fa-instagram" style="font-size: 2em; color: white;"></i></a>
+         <a class="btn btn-outline-primary" href="https://www.twitter.com/"><i class="fab fa-twitter" style="font-size: 2em; color: white;"></i></a>
+         <a class="btn btn-outline-primary" href="https://www.facebook.com/"><i class="fab fa-facebook-f" style="font-size: 2em; color: white;"></i></a>	
+         <a class="btn btn-outline-primary" href="http://brooklyn.news12.com/">City of Brooklyn News</a>
+         <a class="btn btn-outline-primary" href="https://www.brooklynbridgepark.org/">Brooklyn Bridge Park Website</a>
+       
+       </div>
+   </div>
+   
+   
+   
+   
+   
+   </footer>	 
 </body>
 
 </html>
