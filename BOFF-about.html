@@ -164,65 +164,57 @@
     <div class="container jumbotron">
      <div class="row">
       <div class="col-lg-6 offset-lg-3" id="prereg">
-      
+    
      <div style="margin-top: 25%;">
-       <form>
-       <div class="row">
-         <input type="text" class="form-control" placeholder="Name">
+  
+      <form class="needs-validation" novalidate>
+       <div class="form-row" style="margin-bottom: 1rem;">
+         <input type="text" class="form-control" id="validationCustom01" placeholder="Name"  required>
+         <div class="invalid-feedback">Please provide name</div>
        </div>
-       </form>
-       <form>
-       <div class="row">
-         <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail Address">
-       </div>
-       </form>
-     </div>
-   
-     <form>
+  
        <div class="form-row">
-         <div class="form-group col">
-           <label for="Aug5">August 5th</label>
-           <select class="form-control" id="Aug5">
-             <option>Select Movie</option>
-             <option>Movie 1</option>
-             <option>Movie 2</option>
-             <option>Movie 3</option>
-           </select>
-         </div>
-         <div class="form-group col">
-           <label for="Aug6">August 6th</label>
-           <select class="form-control" id="Aug6">
-               <option>Select Movie</option>
-             <option>Movie 1</option>
-             <option>Movie 2</option>
-             <option>Movie 3</option>
-           </select>
-         </div>
+         <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail Address" required>
+         <div class="invalid-feedback">Please provide e-mail</div>
        </div>
-     </form>
-     <form>
-         <div class="form-row">
-           <div class="form-group col">
-             <label for="Aug7">August 7th</label>
-             <select class="form-control" id="Aug7">
-                 <option>Select Movie</option>
-               <option>Movie 1</option>
-               <option>Movie 2</option>
-               <option>Movie 3</option>
-             </select>
-           </div>
-           <div class="form-group col">
-             <label for="Aug8">August 8th</label>
-             <select class="form-control" id="Aug8">
-               <option>Select Movie</option>
-               <option>Movie 1</option>
-               <option>Movie 2</option>
-               <option>Movie 3</option>
-             </select>
-           </div>
-         </div>
-       </form>
-     <div class="form-group row">
+  
+  
+   
+  
+       <div class="form-row">
+           <label for="movieReserve" style="margin-top: 2rem; font-weight: 500;">Select Movie(s)<br><span style="font-weight: 400; color: #059afd;">(if multiple movies are being selected, use CTRL and then select the movies you would like to reserve a seat at.</span></label>
+           <select class="custom-select" multiple size="6" id="movieReserve" required>
+             <optgroup label="August 5th">
+              <option value="1">Movie 1</option>
+              <option value="2">Movie 2</option>
+               <option value="3">Movie 3</option>
+              </optgroup>
+             <optgroup label="August 6th">
+               <option value="4">Movie 1</option>
+               <option value="5">Movie 2</option>
+               <option value="6">Movie 3</option>
+              </optgroup>
+              <optgroup label="August 7th">
+                <option value="7">Movie 1</option>
+                <option value="8">Movie 2</option>
+                <option value="9">Movie 3</option>
+              </optgroup>
+              <optgroup label="August 8th">
+                <option value="10">Movie 1</option>
+                <option value="11">Movie 2</option>
+                <option value="12">Movie 3</option>
+              </optgroup>
+              </select>
+  
+          <div class="invalid-feedback">Please select at least one movie</div>
+  
+        </div>
+  
+  
+  
+  
+  
+     <div class="form-group row" style="margin-top: 2rem;">
        <div class="col" style="text-align: right;">Newsletter subscription</div>
        <div class="col">
          <div class="form-check">
@@ -238,9 +230,32 @@
          <button type="submit" class="btn btn-outline-success btn-sm btn-block">Pre-register</button>
        </div>
      </div>
-   
-     </div>
-     </div>
+     <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+    </form>
+    </div>
+    </div>
+    </div>
+  
+     <!--SNS Links-->
      <div class="col-md-12 d-flex" style="justify-content: space-around; align-items: flex-end; margin-top: 3em">
          <a class="btn btn-outline-primary" href="https://www.instagram.com/"><i class="fab fa-instagram" style="font-size: 2em; color: white;"></i></a>
          <a class="btn btn-outline-primary" href="https://www.twitter.com/"><i class="fab fa-twitter" style="font-size: 2em; color: white;"></i></a>
@@ -250,12 +265,12 @@
        
        </div>
    </div>
+  
    
    
    
    
-   
-   </footer>	 
+</footer>	 
 </body>
 
 </html>
