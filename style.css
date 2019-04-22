@@ -1,0 +1,65 @@
+	 body {
+		margin: 0;
+		padding: 0;
+		position: relative;
+		font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+	}
+
+	header {
+		color: white;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+
+	.jumbotron {
+		background-color:transparent;
+	}
+	
+	footer {
+		color: white;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s3.amazonaws.com/bklyner/bklyner/wp-content/uploads/2018/04/BBPark_movie_Etienne-Frossard.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100vh;
+		margin: 3em 0 0 0;
+	}	
+	
+	.jumbo-title {
+		text-align: center;
+		opacity: 0.9;
+		color: white;
+		margin: 1em;
+	}
+	
+	/* NAV */
+	.navbar {
+		overflow: hidden;
+		transition: 0.4s;
+		position: fixed;
+	}
+	
+	.nav-link {
+		text-transform: uppercase;
+	}
+	
+	.bg-dark {
+		opacity: 0.8;
+	}
+	
+	
+	.navbar a.active {
+		background-color: #fff;
+		color: black;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+
+	#post {
+		margin: 3%;
+		padding: 3%;
+	}

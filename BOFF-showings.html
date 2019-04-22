@@ -4,65 +4,25 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
 
   <style>
 	
 	 body {
-		margin: 0;
-		padding: 0;
-		position: relative;
 		background-color: #636b77;
 	}
 	
 
 	header{
-		color: white;
 		background-image: url("https://www.v12data.com/wp-content/uploads/2018/11/cinema-header-images.jpg");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
 		height: 40vh;
-	}
-
-	
-	footer {
-		color: white;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s3.amazonaws.com/bklyner/bklyner/wp-content/uploads/2018/04/BBPark_movie_Etienne-Frossard.jpg");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 100vh;
-		margin: 3em 0 0 0;
 	}	
-	.jumbotron {
-    background-color: transparent;
-    height: 40vh;
-  }
-	
-	/* NAV */
-	.navbar {
-		overflow: hidden;
-		transition: 0.4s;
-		position: fixed;
-	}
-	
-	.nav-link {
-		text-transform: uppercase;
-	}
-	
-	.bg-dark {
-		opacity: 0.8;
-	}
-	
-	
-	.navbar a.active {
-		background-color: #fff;
-		color: black;
-	}
+
 
 
   </style>
@@ -73,7 +33,7 @@
 <body>
 <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark">
     <div class="container navbar-header">
-        <a class="navbar-brand" href="Brooklyn Film Festival.html">
+        <a class="navbar-brand" href="index.html">
 		 <img src="https://annuaire.laposte.fr/images/category/picto/586.png" width="30" height="30" class="d-inline-block align-top">
 		BOFF
 		</a>
@@ -85,7 +45,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="nav navbar-nav ml-auto nav-pills" id="myTab" role="tablist navigation">
                 <li class="nav-item">
-                    <a class="nav-link" href="Brooklyn Film Festival.html" role="tab">Home</a>
+                    <a class="nav-link" href="index.html" role="tab">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="about-tab" href="BOFF-about.html" role="tab">About</a>
@@ -209,106 +169,152 @@
 </div>
 
 <footer>
-  <div class="container jumbotron">
-    <div class="row">
-      <div class="col-lg-6 offset-lg-3" id="prereg">
+    <!--PRE-REGISTRATION FORM-->
   
-        <div style="margin-top: 25%;">
-
-          <form class="needs-validation" novalidate>
-            <div class="form-row" style="margin-bottom: 1rem;">
-              <input type="text" class="form-control" id="validationCustom01" placeholder="Name"  required>
-              <div class="invalid-feedback">Please provide name</div>
+    <div class="container jumbotron">
+      <div class="row">
+         <div class="col-lg-6 offset-lg-3" id="prereg">
+       
+      <div>
+     
+         <form class="needs-validation" novalidate>
+    
+        <!--NAME AND EMAIL-->
+        <div class="form-row" style="margin-bottom: 1rem;">
+          <div class=" form-group col">
+          <input type="text" class="form-control" id="validationCustom01" placeholder="Name"  required>
+          <div class="invalid-feedback">Please provide name</div>
+          </div>
+     
+          <div class="form-group col">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail Address" required>
+          <div class="invalid-feedback">Please provide e-mail</div>
+          </div>
+        </div>
+        
+     
+        <!--MOVIE CHECKBOXES-->
+  
+        <fieldset class="form-group">
+         <div class="row">
+          <div class="col">
+          <h4>August 5th</h4>
+          <div class="checkbox">
+            <label><input type="checkbox" value="1">Movie 1</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="2">Movie 2</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="3">Movie 3</label>
+          </div>
+          </div>
+          <div class="col">
+            <h4>August 6th</h4>
+            <div class="checkbox">
+              <label><input type="checkbox" value="4">Movie 1</label>
             </div>
-
-            <div class="form-row">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail Address" required>
-              <div class="invalid-feedback">Please provide e-mail</div>
+            <div class="checkbox">
+            <label><input type="checkbox" value="5">Movie 2</label>
+            </div>	
+            <div class="checkbox">
+            <label><input type="checkbox" value="6">Movie 3</label>
             </div>
-
-              <div class="form-row">
-                <label for="movieReserve" style="margin-top: 2rem; font-weight: 500;">Select Movie(s)<br><span style="font-weight: 400; color: #059afd;">(if multiple movies are being selected, use CTRL and then select the movies you would like to reserve a seat at.</span></label>
-                <select class="custom-select" multiple size="6" id="movieReserve" required>
-                  <optgroup label="August 5th">
-                    <option value="1">Movie 1</option>
-                    <option value="2">Movie 2</option>
-                    <option value="3">Movie 3</option>
-                  </optgroup>
-                  <optgroup label="August 6th">
-                    <option value="4">Movie 1</option>
-                    <option value="5">Movie 2</option>
-                    <option value="6">Movie 3</option>
-                  </optgroup>
-                  <optgroup label="August 7th">
-                    <option value="7">Movie 1</option>
-                    <option value="8">Movie 2</option>
-                    <option value="9">Movie 3</option>
-                  </optgroup>
-                  <optgroup label="August 8th">
-                    <option value="10">Movie 1</option>
-                    <option value="11">Movie 2</option>
-                    <option value="12">Movie 3</option>
-                  </optgroup>
-                </select>
-
-                <div class="invalid-feedback">Please select at least one movie</div>
-              </div>
-
-              <div class="form-group row" style="margin-top: 2rem;">
-                <div class="col" style="text-align: right;">Newsletter subscription</div>
-                <div class="col">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck5">
-                    <label class="form-check-label" for="gridCheck5">Sign me up!</label>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-12">
-                  <button type="submit" class="btn btn-outline-success btn-sm btn-block">Pre-register</button>
-                </div>
-              </div>
-              
-<script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function() {
-        'use strict';
-        window.addEventListener('load', function() {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = document.getElementsByClassName('needs-validation');
-          // Loop over them and prevent submission
-          var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-              if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add('was-validated');
-            }, false);
-          });
-        }, false);
-      })();
-</script>
-          </form>
+  
+          </div>
+         </div>
+         <div class="row">
+          <div class="col">
+            <h4>August 7th</h4>
+            <div class="checkbox">
+              <label><input type="checkbox" value="7">Movie 1</label>
+            </div>
+            <div class="checkbox">
+            <label><input type="checkbox" value="8">Movie 2</label>
+            </div>
+            <div class="checkbox">
+            <label><input type="checkbox" value="9">Movie 3</label>
+            </div>
+          </div>
+          
+          <div class="col">
+            <h4>August 8th</h4>
+            <div class="checkbox">
+              <label><input type="checkbox" value="10">Movie 1</label>
+            </div>
+            <div class="checkbox">
+            <label><input type="checkbox" value="11">Movie 2</label>
+            </div>
+            <div class="checkbox">
+            <label><input type="checkbox" value="12">Movie 3</label>
+            </div>
+          </div>
+         </div>
+  
+        </fieldset>
+        
+     
+             
+     
+      </div>
+     
+     
+     
+     
+     
+      <div class="form-group row" style="margin-top: 2rem;">
+        <div class="col" style="text-align: right;">Newsletter subscription</div>
+        <div class="col">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck5">
+            <label class="form-check-label" for="gridCheck5">
+              Sign me up!
+            </label>
+          </div>
         </div>
       </div>
-    </div>
-
-   <!--SNS Links-->
-    <div class="col-md-12 d-flex" style="justify-content: space-around; align-items: flex-end; margin-top: 3em">
-       <a class="btn btn-outline-primary" href="https://www.instagram.com/"><i class="fab fa-instagram" style="font-size: 2em; color: white;"></i></a>
-       <a class="btn btn-outline-primary" href="https://www.twitter.com/"><i class="fab fa-twitter" style="font-size: 2em; color: white;"></i></a>
-       <a class="btn btn-outline-primary" href="https://www.facebook.com/"><i class="fab fa-facebook-f" style="font-size: 2em; color: white;"></i></a>	
-       <a class="btn btn-outline-primary" href="http://brooklyn.news12.com/">City of Brooklyn News</a>
-       <a class="btn btn-outline-primary" href="https://www.brooklynbridgepark.org/">Brooklyn Bridge Park Website</a>
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <button type="submit" class="btn btn-outline-success btn-sm btn-block">Pre-register</button>
+        </div>
+      </div>
+      <script>
+           // Example starter JavaScript for disabling form submissions if there are invalid fields
+           (function() {
+             'use strict';
+             window.addEventListener('load', function() {
+               // Fetch all the forms we want to apply custom Bootstrap validation styles to
+               var forms = document.getElementsByClassName('needs-validation');
+               // Loop over them and prevent submission
+               var validation = Array.prototype.filter.call(forms, function(form) {
+                 form.addEventListener('submit', function(event) {
+                   if (form.checkValidity() === false) {
+                     event.preventDefault();
+                     event.stopPropagation();
+                   }
+                   form.classList.add('was-validated');
+                 }, false);
+               });
+             }, false);
+           })();
+           </script>
+       </form>
+       </div>
+       </div>
+       </div>
      
+      <!--SNS Links-->
+      <div class="col-md-12 d-flex" style="justify-content: space-around; align-items: flex-end; margin-top: 3em">
+          <a class="btn btn-outline-primary" href="https://www.instagram.com/"><i class="fab fa-instagram" style="font-size: 2em; color: white;"></i></a>
+          <a class="btn btn-outline-primary" href="https://www.twitter.com/"><i class="fab fa-twitter" style="font-size: 2em; color: white;"></i></a>
+          <a class="btn btn-outline-primary" href="https://www.facebook.com/"><i class="fab fa-facebook-f" style="font-size: 2em; color: white;"></i></a>	
+          <a class="btn btn-outline-primary" href="http://brooklyn.news12.com/">City of Brooklyn News</a>
+          <a class="btn btn-outline-primary" href="https://www.brooklynbridgepark.org/">Brooklyn Bridge Park Website</a>
+        
+        </div>
     </div>
-  </div>
-
- 
- 
- 
-</footer>	
+  
+  </footer>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
